@@ -166,7 +166,7 @@ let showConsultationCard = consultation => {
 
           <div className="grid grid-cols-1 text-sm mt-2">
 
-            {switch Consultation.admission_date(consultation) {
+            {switch Consultation.encounter_date(consultation) {
             | Some(date) =>
               <div className="grid grid-cols-2 gap-x-2 pt-3 border-b-2 border-gray-200">
                 <div>{str("Admission Date")}</div>
